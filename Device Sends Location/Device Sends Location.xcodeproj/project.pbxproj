@@ -1,0 +1,365 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765070DF74369002DB57D /* CoreGraphics.framework */; };
+		28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD73870D9D96C1002E5188 /* MainWindow.xib */; };
+		D876934E1027F3560049DA35 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D876934D1027F3560049DA35 /* MapView.xib */; };
+		D87693521027F3C50049DA35 /* LocationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87693511027F3C50049DA35 /* LocationView.xib */; };
+		D87693591027F4DE0049DA35 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D87693581027F4DE0049DA35 /* MapViewController.m */; };
+		D876935C1027F4EE0049DA35 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D876935B1027F4EE0049DA35 /* LocationViewController.m */; };
+		D87693851027F72A0049DA35 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87693841027F72A0049DA35 /* CoreLocation.framework */; };
+		D87693891027F7390049DA35 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D87693881027F7390049DA35 /* MapKit.framework */; };
+		D8D2E6D21028C3B900417654 /* libTrailLocationSender.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D8D2E6A01028B42000417654 /* libTrailLocationSender.a */; };
+		D8EA789B1027FD67006AD754 /* TargetsController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EA78991027FD67006AD754 /* TargetsController.m */; };
+		D8EA789C1027FD67006AD754 /* TargetsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8EA789A1027FD67006AD754 /* TargetsController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D85D12C3102B7DC200307E90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D85D1286102B7B2100307E90;
+			remoteInfo = TrailLocationMacSender;
+		};
+		D8D2E6841028B3A800417654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D87F5F6B1006D3960031583D;
+			remoteInfo = LibTrailLocation;
+		};
+		D8D2E69F1028B42000417654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D8D2E6981028B41F00417654;
+			remoteInfo = TrailLocationSender;
+		};
+		D8D2E6DA1028C4AE00417654 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D8D2E6971028B41F00417654;
+			remoteInfo = TrailLocationSender;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* Device Sends Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Device Sends Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765070DF74369002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		28A0AB4B0D9B1048005BE974 /* Device_Sends_Location_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device_Sends_Location_Prefix.pch; sourceTree = "<group>"; };
+		28AD73870D9D96C1002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Device_Sends_Location-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Device_Sends_Location-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		D876934D1027F3560049DA35 /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		D87693511027F3C50049DA35 /* LocationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocationView.xib; sourceTree = "<group>"; };
+		D87693571027F4DE0049DA35 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		D87693581027F4DE0049DA35 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		D876935A1027F4EE0049DA35 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		D876935B1027F4EE0049DA35 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
+		D87693841027F72A0049DA35 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		D87693881027F7390049DA35 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TrailLocation.xcodeproj; path = ../TrailLocation.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D8EA78981027FD67006AD754 /* TargetsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetsController.h; sourceTree = "<group>"; };
+		D8EA78991027FD67006AD754 /* TargetsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetsController.m; sourceTree = "<group>"; };
+		D8EA789A1027FD67006AD754 /* TargetsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TargetsController.xib; path = Classes/TargetsController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765080DF74369002DB57D /* CoreGraphics.framework in Frameworks */,
+				D87693851027F72A0049DA35 /* CoreLocation.framework in Frameworks */,
+				D87693891027F7390049DA35 /* MapKit.framework in Frameworks */,
+				D8D2E6D21028C3B900417654 /* libTrailLocationSender.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1D3623240D0F684500981E51 /* AppDelegate.h */,
+				1D3623250D0F684500981E51 /* AppDelegate.m */,
+				D87693571027F4DE0049DA35 /* MapViewController.h */,
+				D87693581027F4DE0049DA35 /* MapViewController.m */,
+				D876935A1027F4EE0049DA35 /* LocationViewController.h */,
+				D876935B1027F4EE0049DA35 /* LocationViewController.m */,
+				D8EA78981027FD67006AD754 /* TargetsController.h */,
+				D8EA78991027FD67006AD754 /* TargetsController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* Device Sends Location.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* Device Sends Location */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = "Device Sends Location";
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				28A0AB4B0D9B1048005BE974 /* Device_Sends_Location_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28AD73870D9D96C1002E5188 /* MainWindow.xib */,
+				D8EA789A1027FD67006AD754 /* TargetsController.xib */,
+				D876934D1027F3560049DA35 /* MapView.xib */,
+				D87693511027F3C50049DA35 /* LocationView.xib */,
+				8D1107310486CEB800E47090 /* Device_Sends_Location-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765070DF74369002DB57D /* CoreGraphics.framework */,
+				D87693841027F72A0049DA35 /* CoreLocation.framework */,
+				D87693881027F7390049DA35 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D8D2E6811028B3A800417654 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E6851028B3A800417654 /* libTrailLocation.a */,
+				D8D2E6A01028B42000417654 /* libTrailLocationSender.a */,
+				D85D12C4102B7DC200307E90 /* libTrailLocationMacSender.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* Device Sends Location */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Device Sends Location" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8D2E6DB1028C4AE00417654 /* PBXTargetDependency */,
+			);
+			name = "Device Sends Location";
+			productName = "Device Sends Location";
+			productReference = 1D6058910D05DD3D006BFB54 /* Device Sends Location.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Device Sends Location" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* Device Sends Location */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D8D2E6811028B3A800417654 /* Products */;
+					ProjectRef = D8D2E6801028B3A800417654 /* TrailLocation.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* Device Sends Location */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D85D12C4102B7DC200307E90 /* libTrailLocationMacSender.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTrailLocationMacSender.a;
+			remoteRef = D85D12C3102B7DC200307E90 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8D2E6851028B3A800417654 /* libTrailLocation.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTrailLocation.a;
+			remoteRef = D8D2E6841028B3A800417654 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D8D2E6A01028B42000417654 /* libTrailLocationSender.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libTrailLocationSender.a;
+			remoteRef = D8D2E69F1028B42000417654 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD73880D9D96C1002E5188 /* MainWindow.xib in Resources */,
+				D876934E1027F3560049DA35 /* MapView.xib in Resources */,
+				D87693521027F3C50049DA35 /* LocationView.xib in Resources */,
+				D8EA789C1027FD67006AD754 /* TargetsController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
+				D87693591027F4DE0049DA35 /* MapViewController.m in Sources */,
+				D876935C1027F4EE0049DA35 /* LocationViewController.m in Sources */,
+				D8EA789B1027FD67006AD754 /* TargetsController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8D2E6DB1028C4AE00417654 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TrailLocationSender;
+			targetProxy = D8D2E6DA1028C4AE00417654 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Device_Sends_Location_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../;
+				INFOPLIST_FILE = "Device_Sends_Location-Info.plist";
+				PRODUCT_NAME = "Device Sends Location";
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Device_Sends_Location_Prefix.pch;
+				HEADER_SEARCH_PATHS = ../;
+				INFOPLIST_FILE = "Device_Sends_Location-Info.plist";
+				PRODUCT_NAME = "Device Sends Location";
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../;
+				OTHER_LDFLAGS = "-all_load";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Device Sends Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "Device Sends Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

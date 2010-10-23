@@ -1,0 +1,10 @@
+Supported usage goals:
+
+1) Avoid lock-in if base TLLocationManager used, e.g.:
+#ifdef RELEASE
+#define TLLocationManager CLLocationManager
+#end
+
+2) Useable in conjunction with Core Location libraries
+
+3) Useable without Core Location libraries available

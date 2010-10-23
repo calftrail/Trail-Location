@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'Device Sends Location' target in the 'Device Sends Location' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

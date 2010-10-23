@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D85D128C102B7B4200307E90 /* TLLocationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E6C31028B54F00417654 /* TLLocationSender.m */; };
+		D85D128D102B7B4600307E90 /* TLLocationTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E6C71028B55800417654 /* TLLocationTarget.m */; };
+		D85D128E102B7B4B00307E90 /* TLLocationTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D2E6C61028B55800417654 /* TLLocationTarget.h */; };
+		D85D128F102B7B4E00307E90 /* TLLocationSender.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D2E6C21028B54F00417654 /* TLLocationSender.h */; };
+		D87F5F851006D4070031583D /* TrailLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = D87F5D321006AAA10031583D /* TrailLocation.h */; };
+		D88DF47410291EC70005B7D1 /* TLLocationSourceBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D88DF47210291EC70005B7D1 /* TLLocationSourceBase.h */; };
+		D88DF47510291EC70005B7D1 /* TLLocationSourceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = D88DF47310291EC70005B7D1 /* TLLocationSourceBase.m */; };
+		D8AABDB41006F88800F4CA6E /* TLLocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D8AABDB21006F88800F4CA6E /* TLLocationManager.h */; };
+		D8AABDB51006F88800F4CA6E /* TLLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AABDB31006F88800F4CA6E /* TLLocationManager.m */; };
+		D8AABDDF1006FAEE00F4CA6E /* TLLocationMaster.h in Headers */ = {isa = PBXBuildFile; fileRef = D8AABDDD1006FAEE00F4CA6E /* TLLocationMaster.h */; };
+		D8AABDE01006FAEE00F4CA6E /* TLLocationMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = D8AABDDE1006FAEE00F4CA6E /* TLLocationMaster.m */; };
+		D8AABE8710070B5C00F4CA6E /* TLLocationMaster+TLLocationManagerUseOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = D8AABE8610070B5C00F4CA6E /* TLLocationMaster+TLLocationManagerUseOnly.h */; };
+		D8ACE0321007DCE400B470CA /* TLLocationSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ACE0311007DCE400B470CA /* TLLocationSource.h */; };
+		D8ACE03B1008297100B470CA /* TLCoreLocationSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ACE0391008297100B470CA /* TLCoreLocationSource.h */; };
+		D8ACE03C1008297100B470CA /* TLCoreLocationSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ACE03A1008297100B470CA /* TLCoreLocationSource.m */; };
+		D8ACE07F10082D0800B470CA /* TLLocationManager+TLLocationMasterUseOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ACE07E10082D0800B470CA /* TLLocationManager+TLLocationMasterUseOnly.h */; };
+		D8ACE10410083B6500B470CA /* TLLocationMaster+TLLocationSourceUseOnly.h in Headers */ = {isa = PBXBuildFile; fileRef = D8ACE10310083B6500B470CA /* TLLocationMaster+TLLocationSourceUseOnly.h */; };
+		D8D2E6C41028B54F00417654 /* TLLocationSender.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D2E6C21028B54F00417654 /* TLLocationSender.h */; };
+		D8D2E6C81028B55800417654 /* TLLocationTarget.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D2E6C61028B55800417654 /* TLLocationTarget.h */; };
+		D8D2E6D71028C49700417654 /* TLLocationSender.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E6C31028B54F00417654 /* TLLocationSender.m */; };
+		D8D2E6D81028C49900417654 /* TLLocationTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E6C71028B55800417654 /* TLLocationTarget.m */; };
+		D8D2E7291028DF4F00417654 /* CLLocation+TLLocationAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = D8D2E7271028DF4F00417654 /* CLLocation+TLLocationAdditions.h */; };
+		D8D2E72A1028DF4F00417654 /* CLLocation+TLLocationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E7281028DF4F00417654 /* CLLocation+TLLocationAdditions.m */; };
+		D8D2E7311028DF8500417654 /* CLLocation+TLLocationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D8D2E7281028DF4F00417654 /* CLLocation+TLLocationAdditions.m */; };
+		D8E7FF9710275FDC0033FDCA /* TLNetworkLocationSource.h in Headers */ = {isa = PBXBuildFile; fileRef = D8E7FF9510275FDC0033FDCA /* TLNetworkLocationSource.h */; };
+		D8E7FF9810275FDC0033FDCA /* TLNetworkLocationSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D8E7FF9610275FDC0033FDCA /* TLNetworkLocationSource.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		32DBCF5E0370ADEE00C91783 /* TrailLocation_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailLocation_Prefix.pch; sourceTree = "<group>"; };
+		8DC2EF5A0486A6940098B216 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D85D1286102B7B2100307E90 /* libTrailLocationMacSender.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrailLocationMacSender.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87F5D321006AAA10031583D /* TrailLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrailLocation.h; sourceTree = "<group>"; };
+		D87F5E3E1006C5900031583D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D87F5EEB1006CA320031583D /* Goals */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Goals; sourceTree = "<group>"; };
+		D87F5F6B1006D3960031583D /* libTrailLocation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrailLocation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D88DF47210291EC70005B7D1 /* TLLocationSourceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationSourceBase.h; sourceTree = "<group>"; };
+		D88DF47310291EC70005B7D1 /* TLLocationSourceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocationSourceBase.m; sourceTree = "<group>"; };
+		D8AABDB21006F88800F4CA6E /* TLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationManager.h; sourceTree = "<group>"; };
+		D8AABDB31006F88800F4CA6E /* TLLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocationManager.m; sourceTree = "<group>"; };
+		D8AABDDD1006FAEE00F4CA6E /* TLLocationMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationMaster.h; sourceTree = "<group>"; };
+		D8AABDDE1006FAEE00F4CA6E /* TLLocationMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocationMaster.m; sourceTree = "<group>"; };
+		D8AABE8610070B5C00F4CA6E /* TLLocationMaster+TLLocationManagerUseOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLLocationMaster+TLLocationManagerUseOnly.h"; sourceTree = "<group>"; };
+		D8ACE0311007DCE400B470CA /* TLLocationSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationSource.h; sourceTree = "<group>"; };
+		D8ACE0391008297100B470CA /* TLCoreLocationSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLCoreLocationSource.h; sourceTree = "<group>"; };
+		D8ACE03A1008297100B470CA /* TLCoreLocationSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLCoreLocationSource.m; sourceTree = "<group>"; };
+		D8ACE07E10082D0800B470CA /* TLLocationManager+TLLocationMasterUseOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLLocationManager+TLLocationMasterUseOnly.h"; sourceTree = "<group>"; };
+		D8ACE10310083B6500B470CA /* TLLocationMaster+TLLocationSourceUseOnly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TLLocationMaster+TLLocationSourceUseOnly.h"; sourceTree = "<group>"; };
+		D8D2E6981028B41F00417654 /* libTrailLocationSender.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTrailLocationSender.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8D2E6C21028B54F00417654 /* TLLocationSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationSender.h; sourceTree = "<group>"; };
+		D8D2E6C31028B54F00417654 /* TLLocationSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocationSender.m; sourceTree = "<group>"; };
+		D8D2E6C61028B55800417654 /* TLLocationTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLLocationTarget.h; sourceTree = "<group>"; };
+		D8D2E6C71028B55800417654 /* TLLocationTarget.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLLocationTarget.m; sourceTree = "<group>"; };
+		D8D2E7271028DF4F00417654 /* CLLocation+TLLocationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CLLocation+TLLocationAdditions.h"; sourceTree = "<group>"; };
+		D8D2E7281028DF4F00417654 /* CLLocation+TLLocationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CLLocation+TLLocationAdditions.m"; sourceTree = "<group>"; };
+		D8E7FF9510275FDC0033FDCA /* TLNetworkLocationSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TLNetworkLocationSource.h; sourceTree = "<group>"; };
+		D8E7FF9610275FDC0033FDCA /* TLNetworkLocationSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TLNetworkLocationSource.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D85D1284102B7B2100307E90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87F5F691006D3960031583D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D2E6961028B41F00417654 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DFFF38A50411DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D87F5F6B1006D3960031583D /* libTrailLocation.a */,
+				D8D2E6981028B41F00417654 /* libTrailLocationSender.a */,
+				D85D1286102B7B2100307E90 /* libTrailLocationMacSender.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* TrailLocation */ = {
+			isa = PBXGroup;
+			children = (
+				08FB77AEFE84172EC02AAC07 /* Classes */,
+				32C88DFF0371C24200C91783 /* Other Sources */,
+				089C1665FE841158C02AAC07 /* Resources */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks */,
+				034768DFFF38A50411DB9C8B /* Products */,
+			);
+			name = TrailLocation;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D87F5E3E1006C5900031583D /* Foundation.framework */,
+			);
+			name = "External Frameworks";
+			sourceTree = "<group>";
+		};
+		089C1665FE841158C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC2EF5A0486A6940098B216 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		08FB77AEFE84172EC02AAC07 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				D87F5D321006AAA10031583D /* TrailLocation.h */,
+				D8AABDB21006F88800F4CA6E /* TLLocationManager.h */,
+				D8AABDB31006F88800F4CA6E /* TLLocationManager.m */,
+				D8AABE8610070B5C00F4CA6E /* TLLocationMaster+TLLocationManagerUseOnly.h */,
+				D8ACE10310083B6500B470CA /* TLLocationMaster+TLLocationSourceUseOnly.h */,
+				D8AABDDD1006FAEE00F4CA6E /* TLLocationMaster.h */,
+				D8AABDDE1006FAEE00F4CA6E /* TLLocationMaster.m */,
+				D8ACE07E10082D0800B470CA /* TLLocationManager+TLLocationMasterUseOnly.h */,
+				D8ACE0311007DCE400B470CA /* TLLocationSource.h */,
+				D8ACE0381007EB2500B470CA /* Location sources */,
+				D8D2E6B91028B4D500417654 /* Location sender */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		32C88DFF0371C24200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCF5E0370ADEE00C91783 /* TrailLocation_Prefix.pch */,
+				D87F5EEB1006CA320031583D /* Goals */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		D8ACE0381007EB2500B470CA /* Location sources */ = {
+			isa = PBXGroup;
+			children = (
+				D88DF47210291EC70005B7D1 /* TLLocationSourceBase.h */,
+				D88DF47310291EC70005B7D1 /* TLLocationSourceBase.m */,
+				D8ACE0391008297100B470CA /* TLCoreLocationSource.h */,
+				D8ACE03A1008297100B470CA /* TLCoreLocationSource.m */,
+				D8E7FF9510275FDC0033FDCA /* TLNetworkLocationSource.h */,
+				D8E7FF9610275FDC0033FDCA /* TLNetworkLocationSource.m */,
+			);
+			name = "Location sources";
+			sourceTree = "<group>";
+		};
+		D8D2E6B91028B4D500417654 /* Location sender */ = {
+			isa = PBXGroup;
+			children = (
+				D8D2E7271028DF4F00417654 /* CLLocation+TLLocationAdditions.h */,
+				D8D2E7281028DF4F00417654 /* CLLocation+TLLocationAdditions.m */,
+				D8D2E6C21028B54F00417654 /* TLLocationSender.h */,
+				D8D2E6C31028B54F00417654 /* TLLocationSender.m */,
+				D8D2E6C61028B55800417654 /* TLLocationTarget.h */,
+				D8D2E6C71028B55800417654 /* TLLocationTarget.m */,
+			);
+			name = "Location sender";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D85D1282102B7B2100307E90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85D128E102B7B4B00307E90 /* TLLocationTarget.h in Headers */,
+				D85D128F102B7B4E00307E90 /* TLLocationSender.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87F5F671006D3960031583D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87F5F851006D4070031583D /* TrailLocation.h in Headers */,
+				D8AABDB41006F88800F4CA6E /* TLLocationManager.h in Headers */,
+				D8AABDDF1006FAEE00F4CA6E /* TLLocationMaster.h in Headers */,
+				D8AABE8710070B5C00F4CA6E /* TLLocationMaster+TLLocationManagerUseOnly.h in Headers */,
+				D8ACE0321007DCE400B470CA /* TLLocationSource.h in Headers */,
+				D8ACE03B1008297100B470CA /* TLCoreLocationSource.h in Headers */,
+				D8ACE07F10082D0800B470CA /* TLLocationManager+TLLocationMasterUseOnly.h in Headers */,
+				D8ACE10410083B6500B470CA /* TLLocationMaster+TLLocationSourceUseOnly.h in Headers */,
+				D8E7FF9710275FDC0033FDCA /* TLNetworkLocationSource.h in Headers */,
+				D8D2E6C41028B54F00417654 /* TLLocationSender.h in Headers */,
+				D8D2E6C81028B55800417654 /* TLLocationTarget.h in Headers */,
+				D8D2E7291028DF4F00417654 /* CLLocation+TLLocationAdditions.h in Headers */,
+				D88DF47410291EC70005B7D1 /* TLLocationSourceBase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D2E6941028B41F00417654 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D85D1285102B7B2100307E90 /* TrailLocationMacSender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D85D1293102B7B8600307E90 /* Build configuration list for PBXNativeTarget "TrailLocationMacSender" */;
+			buildPhases = (
+				D85D1282102B7B2100307E90 /* Headers */,
+				D85D1283102B7B2100307E90 /* Sources */,
+				D85D1284102B7B2100307E90 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrailLocationMacSender;
+			productName = TrailLocationMacSender;
+			productReference = D85D1286102B7B2100307E90 /* libTrailLocationMacSender.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D87F5F6A1006D3960031583D /* LibTrailLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87F5F791006D3D00031583D /* Build configuration list for PBXNativeTarget "LibTrailLocation" */;
+			buildPhases = (
+				D87F5F671006D3960031583D /* Headers */,
+				D87F5F681006D3960031583D /* Sources */,
+				D87F5F691006D3960031583D /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LibTrailLocation;
+			productName = LibTrailLocation;
+			productReference = D87F5F6B1006D3960031583D /* libTrailLocation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		D8D2E6971028B41F00417654 /* TrailLocationSender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D2E6A41028B43E00417654 /* Build configuration list for PBXNativeTarget "TrailLocationSender" */;
+			buildPhases = (
+				D8D2E6941028B41F00417654 /* Headers */,
+				D8D2E6951028B41F00417654 /* Sources */,
+				D8D2E6961028B41F00417654 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrailLocationSender;
+			productName = TrailLocationSender;
+			productReference = D8D2E6981028B41F00417654 /* libTrailLocationSender.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "TrailLocation" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* TrailLocation */;
+			productRefGroup = 034768DFFF38A50411DB9C8B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D87F5F6A1006D3960031583D /* LibTrailLocation */,
+				D8D2E6971028B41F00417654 /* TrailLocationSender */,
+				D85D1285102B7B2100307E90 /* TrailLocationMacSender */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D85D1283102B7B2100307E90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D85D128C102B7B4200307E90 /* TLLocationSender.m in Sources */,
+				D85D128D102B7B4600307E90 /* TLLocationTarget.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D87F5F681006D3960031583D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8AABDB51006F88800F4CA6E /* TLLocationManager.m in Sources */,
+				D8AABDE01006FAEE00F4CA6E /* TLLocationMaster.m in Sources */,
+				D8ACE03C1008297100B470CA /* TLCoreLocationSource.m in Sources */,
+				D8E7FF9810275FDC0033FDCA /* TLNetworkLocationSource.m in Sources */,
+				D8D2E72A1028DF4F00417654 /* CLLocation+TLLocationAdditions.m in Sources */,
+				D88DF47510291EC70005B7D1 /* TLLocationSourceBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8D2E6951028B41F00417654 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8D2E6D71028C49700417654 /* TLLocationSender.m in Sources */,
+				D8D2E6D81028C49900417654 /* TLLocationTarget.m in Sources */,
+				D8D2E7311028DF8500417654 /* CLLocation+TLLocationAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB91B208733DA50010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		1DEB91B308733DA50010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_TREAT_NONCONFORMANT_CODE_ERRORS_AS_WARNINGS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_TYPECHECK_CALLS_TO_PRINTF = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNKNOWN_PRAGMAS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+		D85D1287102B7B2200307E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TrailLocationMacSender;
+				SDKROOT = macosx10.5;
+			};
+			name = Debug;
+		};
+		D85D1288102B7B2200307E90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = TrailLocationMacSender;
+				SDKROOT = macosx10.5;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D87F5F6C1006D3970031583D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = 4.0;
+				PREBINDING = NO;
+				PRODUCT_NAME = TrailLocation;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		D87F5F6D1006D3970031583D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_VERSION = 4.0;
+				PREBINDING = NO;
+				PRODUCT_NAME = TrailLocation;
+				SDKROOT = iphoneos3.0;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D8D2E6991028B42000417654 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = TrailLocationSender;
+			};
+			name = Debug;
+		};
+		D8D2E69A1028B42000417654 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PREBINDING = NO;
+				PRODUCT_NAME = TrailLocationSender;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB91B108733DA50010E9CD /* Build configuration list for PBXProject "TrailLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB91B208733DA50010E9CD /* Debug */,
+				1DEB91B308733DA50010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D85D1293102B7B8600307E90 /* Build configuration list for PBXNativeTarget "TrailLocationMacSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D85D1287102B7B2200307E90 /* Debug */,
+				D85D1288102B7B2200307E90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D87F5F791006D3D00031583D /* Build configuration list for PBXNativeTarget "LibTrailLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87F5F6C1006D3970031583D /* Debug */,
+				D87F5F6D1006D3970031583D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D2E6A41028B43E00417654 /* Build configuration list for PBXNativeTarget "TrailLocationSender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8D2E6991028B42000417654 /* Debug */,
+				D8D2E69A1028B42000417654 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}
